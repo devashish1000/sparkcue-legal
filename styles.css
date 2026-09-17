@@ -61,10 +61,8 @@ body {
   letter-spacing: -0.011em;
   color: var(--ink);
   background-color: var(--bg);
-  background-image:
-    radial-gradient(900px 420px at 50% -8%, rgba(196, 92, 106, 0.055), transparent 58%),
-    linear-gradient(180deg, var(--bg-silk) 0%, var(--bg) 22rem);
-  background-attachment: scroll;
+  background-image: linear-gradient(180deg, var(--bg-silk) 0%, var(--bg) 18rem);
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 ::selection {
@@ -179,16 +177,6 @@ a:hover {
   color: var(--text);
 }
 
-.site-nav a[aria-current="page"]::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin-top: 0.28rem;
-  background: var(--accent);
-  opacity: 0.85;
-}
-
 /* ——— Page frame ——— */
 
 .page {
@@ -233,6 +221,7 @@ a:hover {
   line-height: 0.92;
   letter-spacing: -0.028em;
   color: var(--text);
+  text-wrap: balance;
 }
 
 .display em {
@@ -255,6 +244,7 @@ a:hover {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
 }
 
 .rule {
@@ -262,7 +252,7 @@ a:hover {
   height: 1px;
   margin: 2.75rem 0;
   border: 0;
-  background: linear-gradient(90deg, var(--gold-line), var(--border) 42%, transparent);
+  background: var(--border);
 }
 
 /* ——— Hub destinations ——— */
@@ -295,11 +285,12 @@ a:hover {
 
 .dest-num {
   grid-row: 1 / span 3;
-  padding-top: 0.55rem;
+  padding-top: 0.62rem;
   color: var(--gold);
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.16em;
+  font-variant-numeric: tabular-nums;
 }
 
 .dest h2 {
@@ -330,7 +321,7 @@ a:hover {
   color: var(--accent-hover);
 }
 
-.dest:hover h2 { color: #fff8f0; }
+.dest:hover h2 { color: var(--text); }
 
 /* ——— Privacy layout ——— */
 
@@ -349,7 +340,8 @@ a:hover {
   border-bottom: 1px solid var(--border);
   color: var(--ink);
   font-size: 1.0625rem;
-  line-height: 1.75;
+  line-height: 1.8;
+  text-wrap: pretty;
 }
 
 .toc {
@@ -401,6 +393,14 @@ a:hover {
 }
 
 .legal-section:first-child { border-top: 0; padding-top: 0.25rem; }
+
+.legal-section:target {
+  outline: none;
+}
+
+.legal-section:target h2 .n {
+  color: var(--accent);
+}
 
 .legal-section h2 {
   display: grid;
@@ -468,11 +468,12 @@ a:hover {
 .contact-panel,
 .email-card {
   margin: 1.15rem 0 0;
-  padding: 1.35rem 1.35rem 1.4rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  box-shadow: inset 0 1px 0 var(--gold-line);
+  padding: 1.15rem 0 0.15rem;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--gold-line);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .contact-panel p { margin: 0 0 0.55rem; }
@@ -541,10 +542,9 @@ a:hover {
 }
 
 .email-card {
-  padding: 1.35rem 1.4rem 1.3rem;
-  background: transparent;
-  border-color: var(--border);
-  box-shadow: inset 0 1px 0 var(--gold-line);
+  margin-top: 0.15rem;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .email-card .kicker {
@@ -558,12 +558,12 @@ a:hover {
 
 .email-link {
   display: inline-block;
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.7rem;
   font-family: var(--serif);
-  font-size: clamp(1.45rem, 3.4vw, 1.85rem);
+  font-size: clamp(1.55rem, 4vw, 2.15rem);
   font-weight: 500;
-  letter-spacing: -0.015em;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
   color: var(--text);
   text-decoration: none;
   word-break: break-word;
