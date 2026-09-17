@@ -3,47 +3,87 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0b0d" />
+  <meta name="color-scheme" content="dark" />
   <title>SparkCue — Support</title>
+  <meta name="description" content="SparkCue support: contact, subscriptions, and account deletion. Last updated September 17, 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html">SparkCue</a>
-    <nav>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Support</h1>
-    <p class="meta">Last updated: September 17, 2026</p>
-
-    <p>SparkCue is an iOS app that helps you craft dating reply cues from chat screenshots you upload.</p>
-
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email us at:</p>
-      <p><a href="mailto:devashish1000@gmail.com">devashish1000@gmail.com</a></p>
-      <p>We typically reply within a few business days.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true"></span>
+        SparkCue
+      </a>
+      <nav class="site-nav" aria-label="Legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
     </div>
+  </header>
 
-    <h2>What we can help with</h2>
-    <ul>
-      <li>Sign-in or account issues (Apple or Google)</li>
-      <li>Cue balance, subscriptions, or restore purchases</li>
-      <li>Bug reports and feature feedback</li>
-      <li>Privacy questions and account deletion requests</li>
-    </ul>
+  <main id="main" class="page page--support">
+    <p class="eyebrow">Help</p>
+    <h1 class="display">Support</h1>
+    <p class="meta">Last updated September 17, 2026</p>
+    <p class="lede">SparkCue is an iOS app that helps you craft dating reply cues from chat screenshots you upload.</p>
 
-    <h2>Subscriptions</h2>
-    <p>Plus and Pro are sold as auto-renewable subscriptions through Apple. Manage or cancel anytime in your Apple ID subscription settings (Settings → Apple ID → Subscriptions). Deleting your SparkCue account does not automatically cancel Apple billing.</p>
+    <hr class="rule" />
 
-    <h2>Account deletion</h2>
-    <p>You can request deletion of your SparkCue account and associated app data by emailing <a href="mailto:devashish1000@gmail.com">devashish1000@gmail.com</a> from the address tied to your account, with the subject line “Delete my SparkCue account.” We will process verified requests and confirm when complete. Apple purchases remain managed in your Apple ID settings.</p>
+    <section class="support-block" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="email-card">
+        <p class="kicker">Email us at</p>
+        <a class="email-link" href="mailto:devashish1000@gmail.com">devashish1000@gmail.com</a>
+        <p class="wait">We typically reply within a few business days.</p>
+      </div>
+    </section>
 
-    <h2>Privacy</h2>
-    <p>See our <a href="privacy.html">Privacy Policy</a> for details on data we collect and how we use it.</p>
+    <hr class="rule" />
+
+    <section class="support-block" id="help" aria-labelledby="help-heading">
+      <h2 id="help-heading">What we can help with</h2>
+      <ul class="help-list">
+        <li>Sign-in or account issues (Apple or Google)</li>
+        <li>Cue balance, subscriptions, or restore purchases</li>
+        <li>Bug reports and feature feedback</li>
+        <li>Privacy questions and account deletion requests</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="support-block" id="subscriptions" aria-labelledby="subs-heading">
+      <h2 id="subs-heading">Subscriptions</h2>
+      <p>Plus and Pro are sold as auto-renewable subscriptions through Apple. Manage or cancel anytime in your Apple ID subscription settings (Settings → Apple ID → Subscriptions). Deleting your SparkCue account does not automatically cancel Apple billing.</p>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="support-block" id="deletion" aria-labelledby="deletion-heading">
+      <h2 id="deletion-heading">Account deletion</h2>
+      <p>You can request deletion of your SparkCue account and associated app data by emailing <a href="mailto:devashish1000@gmail.com">devashish1000@gmail.com</a> from the address tied to your account, with the subject line “Delete my SparkCue account.” We will process verified requests and confirm when complete. Apple purchases remain managed in your Apple ID settings.</p>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="support-block" id="privacy" aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">Privacy</h2>
+      <p>See our <a href="privacy.html">Privacy Policy</a> for details on data we collect and how we use it.</p>
+    </section>
   </main>
-  <footer>© 2026 SparkCue. Not affiliated with Apple Inc.</footer>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>© 2026 SparkCue. Not affiliated with Apple Inc.</p>
+      <p><a href="index.html">Legal</a> · <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
 </body>
 </html>
