@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="120 -48 960 960" fill="none">
-  <!-- Exact SparkCue app mark, square-cropped for favicon. -->
-  <rect x="120" y="-48" width="960" height="960" fill="#0c0b0d"/>
+<svg width="1070" height="790" viewBox="65 30 1070 790" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="favBubbleGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 421) rotate(90) scale(520 520)">
+    <radialGradient id="bubbleGlowFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 421) rotate(90) scale(520 520)">
       <stop stop-color="#B96F78"/>
       <stop offset="0.23" stop-color="#9A5364"/>
       <stop offset="0.6" stop-color="#71364F"/>
       <stop offset="1" stop-color="#3B1831"/>
     </radialGradient>
-    <linearGradient id="favGoldStroke" x1="170" y1="140" x2="1030" y2="735" gradientUnits="userSpaceOnUse">
+    <linearGradient id="goldStroke" x1="170" y1="140" x2="1030" y2="735" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FAE5BB"/>
       <stop offset="0.16" stop-color="#C68B45"/>
       <stop offset="0.38" stop-color="#FBE4B5"/>
@@ -17,27 +15,27 @@
       <stop offset="0.73" stop-color="#F6D89F"/>
       <stop offset="1" stop-color="#AE6A2E"/>
     </linearGradient>
-    <radialGradient id="favSparkFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 421) rotate(90) scale(92)">
+    <radialGradient id="sparkFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 421) rotate(90) scale(92)">
       <stop stop-color="#FFFDF7"/>
       <stop offset="0.55" stop-color="#FFF1D7"/>
       <stop offset="1" stop-color="#F3C982"/>
     </radialGradient>
-    <clipPath id="favLeftOverlap" clipPathUnits="userSpaceOnUse">
+    <clipPath id="leftOverlap" clipPathUnits="userSpaceOnUse">
       <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z"/>
     </clipPath>
   </defs>
 
-  <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" fill="url(#favBubbleGlow)"/>
-  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" fill="url(#favBubbleGlow)"/>
-  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" fill="#B85F77" clip-path="url(#favLeftOverlap)"/>
+  <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" fill="url(#bubbleGlowFill)"/>
+  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" fill="url(#bubbleGlowFill)"/>
+  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" fill="#B85F77" clip-path="url(#leftOverlap)"/>
 
   <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" stroke="#74401F" stroke-opacity="0.58" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" stroke="#74401F" stroke-opacity="0.58" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" stroke="url(#favGoldStroke)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" stroke="url(#favGoldStroke)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" stroke="url(#goldStroke)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" stroke="url(#goldStroke)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M465 125C289 125 146 256 146 417C146 502 181 579 241 632C240 670 232 704 217 734C263 724 304 708 340 683C380 694 422 699 465 699C641 699 782 573 782 417C782 256 641 125 465 125Z" stroke="#FFF1CD" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M735 125C911 125 1054 256 1054 417C1054 502 1019 579 959 632C960 670 968 704 983 734C937 724 896 708 860 683C820 694 778 699 735 699C559 699 418 573 418 417C418 256 559 125 735 125Z" stroke="#FFF1CD" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
   <path d="M600 316C611 380 624 405 690 417C624 429 611 454 600 518C589 454 576 429 510 417C576 405 589 380 600 316Z" transform="translate(600 417) scale(1.32) translate(-600 -417)" stroke="#FFF0CF" stroke-width="5"/>
-  <path d="M600 316C611 380 624 405 690 417C624 429 611 454 600 518C589 454 576 429 510 417C576 405 589 380 600 316Z" transform="translate(600 417) scale(0.88) translate(-600 -417)" fill="url(#favSparkFill)"/>
+  <path d="M600 316C611 380 624 405 690 417C624 429 611 454 600 518C589 454 576 429 510 417C576 405 589 380 600 316Z" transform="translate(600 417) scale(0.88) translate(-600 -417)" fill="url(#sparkFill)"/>
 </svg>

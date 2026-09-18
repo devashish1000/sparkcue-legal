@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,7 +19,7 @@
   <header class="site-header">
     <div class="nav-bar">
       <a class="brand" href="index.html" aria-current="page">
-        <span class="mark" aria-hidden="true"></span>
+        <img class="brand-mark" src="assets/sparkcue-logo.svg" width="40" height="30" alt="" />
         SparkCue
       </a>
       <nav class="site-nav" aria-label="Legal">
@@ -29,11 +30,12 @@
   </header>
 
   <main id="main" class="page page--hub">
-    <p class="eyebrow">Legal</p>
-    <h1 class="display">SparkCue</h1>
-    <p class="lede">Official Privacy Policy and Support pages for the SparkCue iOS app.</p>
-
-    <hr class="rule" />
+    <header class="page-hero">
+      <img class="hub-mark" src="assets/sparkcue-logo.svg" width="160" height="118" alt="" />
+      <p class="eyebrow">Legal</p>
+      <h1 class="display">SparkCue</h1>
+      <p class="lede">Official Privacy Policy and Support pages for the SparkCue iOS app.</p>
+    </header>
 
     <ul class="destinations">
       <li>

@@ -8,7 +8,7 @@
   --text: #f4f0ea;
   --ink: #e8e2d8;
   --muted: #a89f96;
-  --faint: #7a726c;
+  --faint: #8f8680;
   --accent: #c45c6a;
   --accent-hover: #d47884;
   --gold: #f0bc79;
@@ -19,7 +19,7 @@
   --measure: 62ch;
   --page: 72rem;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
-  --header-h: 3.75rem;
+  --header-h: 3.9rem;
   --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: "Manrope", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -136,7 +136,7 @@ a:hover {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.65rem;
   color: var(--text);
   text-decoration: none;
   font-family: var(--serif);
@@ -148,13 +148,11 @@ a:hover {
 
 .brand:hover { color: var(--text); }
 
-.mark {
-  width: 0.42rem;
-  height: 0.42rem;
+.brand-mark {
+  display: block;
+  width: auto;
+  height: 1.85rem;
   flex: 0 0 auto;
-  background: var(--accent);
-  transform: rotate(45deg);
-  box-shadow: 0 0 0 1px var(--gold-line);
 }
 
 .site-nav {
@@ -191,17 +189,24 @@ a:hover {
   padding-top: clamp(3.5rem, 12vw, 7.5rem);
 }
 
-.page--hub .display,
-.page--hub .lede,
-.page--hub .rule,
+.page--hub .page-hero,
 .page--hub .destinations,
-.page--support .eyebrow,
-.page--support .display,
-.page--support .meta,
-.page--support .lede,
+.page--support .page-hero,
 .page--support .rule,
 .page--support .support-block {
   max-width: 36.5rem;
+}
+
+.page-hero { max-width: 36.5rem; }
+
+.hub-mark {
+  display: block;
+  width: auto;
+  height: clamp(4.35rem, 13vw, 6.5rem);
+}
+
+.page--hub .hub-mark {
+  margin: 0 0 2.15rem;
 }
 
 .eyebrow {
@@ -260,7 +265,7 @@ a:hover {
 .destinations {
   display: grid;
   gap: 0;
-  margin: 0;
+  margin: 2.75rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -269,7 +274,7 @@ a:hover {
   display: grid;
   grid-template-columns: 2.4rem minmax(0, 1fr);
   gap: 0.35rem 1rem;
-  padding: 1.65rem 0 1.75rem;
+  padding: 1.7rem 0 1.8rem;
   border-top: 1px solid var(--border);
   color: inherit;
   text-decoration: none;
@@ -315,6 +320,17 @@ a:hover {
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.04em;
+}
+
+.dest-cta::after {
+  content: "";
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  margin-left: 0.4em;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: rotate(45deg) translateY(-0.08em);
 }
 
 .dest:hover .dest-cta {
@@ -379,8 +395,9 @@ a:hover {
 .toc a:hover { color: var(--text); }
 
 .toc-n {
-  color: var(--faint);
+  color: var(--gold);
   font-variant-numeric: tabular-nums;
+  opacity: 0.72;
 }
 
 .prose {
@@ -618,6 +635,8 @@ a:hover {
 
 @media (max-width: 520px) {
   .site-nav { gap: 1rem; }
+  .brand { font-size: 1.25rem; gap: 0.5rem; }
+  .brand-mark { height: 1.65rem; }
   .dest { grid-template-columns: 1.9rem minmax(0, 1fr); }
   .legal-section h2 { grid-template-columns: 1.7rem minmax(0, 1fr); gap: 0.5rem; }
   .site-footer .inner { flex-direction: column; }
